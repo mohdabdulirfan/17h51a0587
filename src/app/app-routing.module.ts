@@ -1,8 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from "./home/home.component";
+import { ColorComponent } from "./color/color.component";
+import { CountryComponent } from "./country/country.component";
+const routes: Routes = [
+  {
+    path: '', component : HomeComponent
+  },
+  {
+    path: 'color', component: ColorComponent
+  },
+  {
+    path: 'country', component: CountryComponent
+  }
 
-
-const routes: Routes = [];
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
